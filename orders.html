@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - NeoTrend</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <nav class="glass">
+            <div class="logo">NeoTrend</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" aria-label="Home">Home</a></li>
+                <li><a href="products.html" class="nav-link" aria-label="Products">Shop</a></li>
+                <li><a href="orders.html" class="nav-link" aria-label="Orders">Orders</a></li>
+                <li><a href="profile.html" class="nav-link" aria-label="Profile">Profile</a></li>
+                <li><a href="cart.html" class="nav-link" aria-label="Cart">Cart</a></li>
+            </ul>
+            <div class="cart-icon" aria-label="Cart">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="cart-count">0</span>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+            <div class="menu-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="orders">
+            <h2>Your Orders</h2>
+            <div class="orders-timeline"></div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NeoTrend</h3>
+                <p>Redefining e-commerce with style and innovation.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <div class="footer-links">
+                    <a href="#privacy" class="modal-link" data-modal="privacy-modal" aria-label="Privacy policy">Privacy</a>
+                    <a href="#terms" class="modal-link" data-modal="terms-modal" aria-label="Terms and conditions">Terms</a>
+                    <a href="#faq" class="modal-link" data-modal="faq-modal" aria-label="FAQ">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:hello@neotrend.com">hello@neotrend.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 NeoTrend. All rights reserved.</p>
+    </footer>
+
+    <div class="modal privacy-modal glass" aria-label="Privacy policy modal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2>Privacy Policy</h2>
+            <p>Your data is safe with us. We only collect what's needed for a seamless shopping experience.</p>
+        </div>
+    </div>
+    <div class="modal terms-modal glass" aria-label="Terms and conditions modal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2>Terms & Conditions</h2>
+            <p>Shop with confidence. Our terms ensure fair and transparent transactions.</p>
+        </div>
+    </div>
+    <div class="modal faq-modal glass" aria-label="FAQ modal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">×</span>
+            <h2>FAQ</h2>
+            <p><strong>Shipping:</strong> Global delivery in 3-7 days.<br>
+               <strong>Returns:</strong> Hassle-free returns within 30 days.<br>
+               <strong>Support:</strong> 24/7 customer service.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
